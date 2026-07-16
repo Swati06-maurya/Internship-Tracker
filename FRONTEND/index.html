@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternSync | Internship Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>InternSync</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#features">Features</a></li>
+
+            <li><a href="#dashboard">Dashboard</a></li>
+
+            <li><a href="#tracker">Tracker</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="signin-btn">
+            Sign In
+        </button>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-left">
+            <span class="badge">
+                Your Internship Journey Starts Here
+            </span>
+            <h1>
+                Transform Your
+            <span>Internship Hunt</span>
+            </h1>
+            <p>
+                Track internship applications, deadlines,
+                interview progress and offers in one beautiful dashboard.
+            </p>
+            <div class="hero-buttons">
+                <button class="primary-btn">
+                    Get Started
+                </button>
+                <button class="secondary-btn">
+                Learn More
+                </button>
+            </div>
+            <div class="hero-points">
+                <p>
+                    Track Unlimited Applications
+                </p>
+                <p>
+                    Never Miss Deadlines
+                </p>
+                <p>
+                    Monitor Interview Progress
+                </p>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="application-card">
+                <h2>
+                    Recent Applications
+                </h2>
+                <div class="application">
+                    <h3>Google</h3>
+                    <p>Software Engineering Intern</p>
+                    <span class="status interview">
+                        Interview
+                    </span>
+                </div>
+                <div class="application">
+                    <h3>Microsoft</h3>
+                    <p>Frontend Developer Intern</p>
+                    <span class="status applied">
+                        Applied
+                    </span>
+                </div>
+                <div class="application">
+                    <h3>Amazon</h3>
+                    <p>SDE Intern</p>
+                    <span class="status selected">
+                        Selected
+                    </span>
+                </div>
+                <div class="mini-stats">
+                    <div>
+                        <h3>12</h3>
+                        <p>Applied</p>
+                    </div>
+                    <div>
+                        <h3>5</h3>
+                        <p>Interview</p>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                        <p>Offers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features -->
+    <section id="features" class="features">
+        <h2>
+            Why Choose <span>InternSync?</span>
+        </h2>
+        <p class="section-text">
+            Everything you need to organize your internship
+            applications in one place.
+        </p>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>
+                    Application Tracking
+                </h3>
+                <p>
+                    Keep all internship applications organized.
+                </p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-bell"></i>
+                <h3>
+                    Smart Notifications
+                </h3>
+                <p>
+                    Never miss deadlines or interview schedules.
+                </p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>
+                    Progress Analytics
+                </h3>
+                <p>
+                    Monitor your internship journey with statistics.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="dashboard">
+        <h2>
+            Dashboard Overview
+        </h2>
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Total Applications</h3>
+                <span id="totalApplications">
+                    0
+                </span>
+            </div>
+            <div class="card">
+                <h3>Interview Calls</h3>
+                <span id="interviews">
+                    0
+                </span>
+            </div>
+            <div class="card">
+                <h3>Offers</h3>
+                <span id="offers">
+                    0
+                </span>
+            </div>
+            <div class="card">
+                <h3>Rejected</h3>
+                <span id="rejected">
+                    0
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Tracker -->
+    <section id="tracker" class="tracker">
+        <h2>
+            Internship Tracker
+        </h2>
+        <form id="internshipForm">
+            <input
+                type="text"
+                id="company"
+                placeholder="Company Name"
+                required>
+            <input
+                type="text"
+                id="role"
+                placeholder="Job Role"
+                required>
+            <input
+                type="text"
+                id="location"
+                placeholder="Location"
+                required>
+            <input
+                type="date"
+                id="applicationDate"
+                required>
+            <select id="status">
+                <option value="Applied">Applied</option>
+                <option value="Interview">Interview</option>
+                <option value="Selected">Selected</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+            <input
+                type="url"
+                id="jobLink"
+                placeholder="Job Link">
+            <textarea
+                id="notes"
+                placeholder="Notes">
+            </textarea>
+            <button 
+               id="submitBtn"
+               type="submit">
+               Add Internship
+            </button>
+        </form>
+    </section>
+
+    <!-- Applications Table -->
+     <div class="search-container">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by company, role or location...">
+    </div>
+    <div class="filter-container">
+    <label for="statusFilter">Filter Status:</label>
+    <select id="statusFilter">
+        <option value="All">All</option>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Selected">Selected</option>
+        <option value="Rejected">Rejected</option>
+    </select>
+</div>
+<div class="sort-container">
+    <label for="sortOption">Sort By:</label>
+    <select id="sortOption">
+        <option value="default">Default</option>
+        <option value="companyAsc">Company (A-Z)</option>
+        <option value="companyDesc">Company (Z-A)</option>
+        <option value="dateNewest">Newest Date</option>
+        <option value="dateOldest">Oldest Date</option>
+    </select>
+</div>
+    <section class="table-section">
+        <h2>
+            Your Applications
+        </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>InternSync</h3>
+        <p>
+            Build your career one internship at a time.
+        </p>
+        <p>
+            © 2026 InternSync. All Rights Reserved.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
