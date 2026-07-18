@@ -282,13 +282,13 @@ Passionate about Web Development and Full Stack Development.
 GitHub:
 
 ```
-https://github.com/YOUR_GITHUB_USERNAME
+https://github.com/Swati06-maurya
 ```
 
 LinkedIn:
 
 ```
-https://linkedin.com/in/YOUR_LINKEDIN_USERNAME
+https://linkedin.com/in/Swati-Maurya
 ```
 
 ---
