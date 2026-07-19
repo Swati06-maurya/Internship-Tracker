@@ -275,7 +275,7 @@ Through this project I learned:
 
 **Swati**
 
-Second Year Computer Science Engineering Student
+Third Year Computer Science Engineering Student
 
 Passionate about Web Development and Full Stack Development.
 
